@@ -101,7 +101,7 @@ def command_long_text(m):
     bot.send_message(cid, "Procedemos a arrancar el amule.")
     bot.send_chat_action(cid, 'typing')
     time.sleep(3)
-    os.system("sudo /etc/init.d/amule-daemon start")
+    os.system("sudo /etc/init.d/amule-daemon start & exit 0")
 # Para el amule
 @bot.message_handler(commands=['amulestop'])
 def command_long_text(m):
